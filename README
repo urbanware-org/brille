@@ -1,0 +1,54 @@
+
+README (Brille)
+
+    Definition
+
+        Python module that allows converting a string into the Braille
+        alphabet and vice versa.
+
+    Details
+
+        The definition above actually explains it all. Simple and easy to use.
+
+        Notice that this module uses the Python 3.x framework. There is no
+        official version for Python 2.x, but if you need that for whatever
+        reason, you can try refactoring the syntax from Python 3.x to version
+        2.x using the "3to2" tool. However, there is no guarantee that this
+        works properly or at all.
+
+        Furthermore, the module requires a shell that uses UTF-8 encoding,
+        otherwise it will not work.
+        
+        The code was written on Linux and has only been tested on that
+        platform, yet.
+
+        Feel free to modify!
+
+    Usage
+
+        Convert (encode) a string into the Braille alphabet
+
+            To convert the string "This is an example" into the Braille
+            alphabet, type:
+
+                braille = brille.string2braille("This is an example")
+
+            Supported characters are letters, numbers and spaces. All others
+            will be ignored. The Braille letters will be returned using UTF-8
+            characters.
+
+        Convert (decode) the Braille alphabet into a string
+
+            The other way around, to convert Braille letters into a string,
+            type:
+
+                string = brille.braille2string("⠞⠓⠊⠎ ⠊⠎ ⠁⠝ ⠑⠭⠁⠍⠏⠇⠑"))
+
+            Notice that you can only use the UTF-8 characters to enter the
+            Braille letters. All other characters will be ignored.
+
+    Useless facts
+
+        The missing "a" inside the project name "Brille" is not a typo. The
+        word "Brille" is German for "glasses". 
+
