@@ -3,24 +3,25 @@
 
 # ============================================================================
 # Brille - Braille alphabet encode/decode module
-# Copyright (C) 2017 by Ralf Kilian
+# Copyright (C) 2018 by Ralf Kilian
 # Distributed under the MIT License (https://opensource.org/licenses/MIT)
 #
 # Website: http://www.urbanware.org
 # GitHub: https://github.com/urbanware-org/brille
 # ============================================================================
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
-braille_alphabet = {"a" : "⠁",  "b" : "⠃", "c"  : "⠉", "d"  : "⠙",
-                    "e" : "⠑",  "f" : "⠋", "g"  : "⠛", "h"  : "⠓",
-                    "i" : "⠊",  "j" : "⠚", "k"  : "⠅", "l"  : "⠇",
-                    "m" : "⠍",  "n" : "⠝", "o"  : "⠕", "p"  : "⠏",
-                    "q" : "⠟",  "r" : "⠗", "s"  : "⠎", "t"  : "⠞",
-                    "u" : "⠥",  "v" : "⠧", "w"  : "⠺", "x"  : "⠭",
-                    "y" : "⠽",  "z" : "⠵", "1"  : "⠼⠁", "2" : "⠼⠃",
-                    "3" : "⠼⠉", "4" : "⠼⠙", "5" : "⠼⠑", "6" : "⠼⠋",
-                    "7" : "⠼⠛", "8" : "⠼⠓", "9" : "⠼⠊", "0" : "⠼⠚"}
+BRAILLE_ALPHABET = {"a": "⠁", "b": "⠃", "c": "⠉", "d": "⠙",
+                    "e": "⠑", "f": "⠋", "g": "⠛", "h": "⠓",
+                    "i": "⠊", "j": "⠚", "k": "⠅", "l": "⠇",
+                    "m": "⠍", "n": "⠝", "o": "⠕", "p": "⠏",
+                    "q": "⠟", "r": "⠗", "s": "⠎", "t": "⠞",
+                    "u": "⠥", "v": "⠧", "w": "⠺", "x": "⠭",
+                    "y": "⠽", "z": "⠵", "1": "⠼⠁", "2": "⠼⠃",
+                    "3": "⠼⠉", "4": "⠼⠙", "5": "⠼⠑", "6": "⠼⠋",
+                    "7": "⠼⠛", "8": "⠼⠓", "9": "⠼⠊", "0": "⠼⠚"}
+
 
 def get_version():
     """
@@ -35,7 +36,7 @@ def string2braille(string):
     """
     output = ""
 
-    while (" " * 2) in string:
+    while " " * 2 in string:
         string = string.replace((" " * 2), " ")
 
     for char in string.lower().strip():
@@ -43,9 +44,10 @@ def string2braille(string):
             output += char
             continue
         else:
-            output += braille_alphabet.get(char, "")
+            output += BRAILLE_ALPHABET.get(char, "")
 
     return output.strip()
+
 
 def braille2string(braille_code):
     """
@@ -53,13 +55,12 @@ def braille2string(braille_code):
     """
     output = ""
 
-    b = {v: k for k, v in braille_alphabet.items()}
+    braille = {v: k for k, v in BRAILLE_ALPHABET.items()}
     for word in braille_code.split(" "):
         for letter in word:
-            output += b.get(letter, "")
+            output += braille.get(letter, "")
         output += " "
 
     return output.strip()
 
 # EOF
-
