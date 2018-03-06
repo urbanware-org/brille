@@ -2,7 +2,7 @@
 LICENSE (brille)
 
     Brille - Braille alphabet encode/decode module
-    Copyright (C) 2017 by Ralf Kilian
+    Copyright (C) 2018 by Ralf Kilian
 
     Distributed under the MIT License:
 
@@ -24,4 +24,3 @@ LICENSE (brille)
         CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
         TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
         SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
