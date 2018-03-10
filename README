@@ -1,54 +1,64 @@
+# *Brille*
 
-README (Brille)
+**Table of contents**
+*   [Definition](#definition)
+*   [Details](#details)
+*   [Requirements](#requirements)
+*   [Usage](#usage)
+*   [Useless facts](#useless-facts)
 
-    Definition
+----
 
-        Python module that allows converting a string into the Braille
-        alphabet and vice versa.
+## Definition
 
-    Details
+Simple *Python* module that allows converting a string into the Braille alphabet and vice versa.
 
-        The definition above actually explains it all. Simple and easy to use.
+[Top](#)
 
-        Notice that this module uses the Python 3.x framework. There is no
-        official version for Python 2.x, but if you need that for whatever
-        reason, you can try refactoring the syntax from Python 3.x to version
-        2.x using the "3to2" tool. However, there is no guarantee that this
-        works properly or at all.
+## Details
 
-        Furthermore, the module requires a shell that uses UTF-8 encoding,
-        otherwise it will not work.
-        
-        The code was written on Linux and has only been tested on that
-        platform, yet.
+The definition above actually explains it all. Simple and easy to use.
 
-        Feel free to modify!
+However, the module requires a shell that uses UTF-8 encoding, otherwise it will crash due to encoding errors.
 
-    Usage
+The code was written on *Linux* and has only been tested on that platform, yet.
 
-        Convert (encode) a string into the Braille alphabet
+Feel free to modify!
 
-            To convert the string "This is an example" into the Braille
-            alphabet, type:
+[Top](#)
 
-                braille = brille.string2braille("This is an example")
+## Requirements
 
-            Supported characters are letters, numbers and spaces. All others
-            will be ignored. The Braille letters will be returned using UTF-8
-            characters.
+Notice that this module uses the *Python* 3.x framework. There is no official version for *Python* 2.x, but if you need that for whatever reason, you can try refactoring the syntax from *Python* 3.x to version 2.x using the *3to2* tool.
 
-        Convert (decode) the Braille alphabet into a string
+However, there is no guarantee that this works properly or at all.
 
-            The other way around, to convert Braille letters into a string,
-            type:
+[Top](#)
 
-                string = brille.braille2string("⠞⠓⠊⠎ ⠊⠎ ⠁⠝ ⠑⠭⠁⠍⠏⠇⠑"))
+## Usage
 
-            Notice that you can only use the UTF-8 characters to enter the
-            Braille letters. All other characters will be ignored.
+### Encode a string into Braille alphabet
 
-    Useless facts
+So, to convert the string `This is an example` into the Braille alphabet, type:
 
-        The missing "a" inside the project name "Brille" is not a typo. The
-        word "Brille" is German for "glasses". 
+```python
+braille = brille.string2braille("This is an example")
+```
+Supported characters are letters, numbers and spaces. All others will be ignored. The Braille letters will be returned using UTF-8 characters.
 
+### Decode Braille alphabet into a string
+
+The other way around, to convert Braille letters into a string, type:
+
+```python
+string = brille.braille2string("⠞⠓⠊⠎ ⠊⠎ ⠁⠝ ⠑⠭⠁⠍⠏⠇⠑"))
+```
+Notice that you can only use the UTF-8 characters to enter the Braille letters. All other characters will be ignored.
+
+[Top](#)
+
+## Useless facts
+
+*   The missing "a" inside the project name "Brille" is not a typo. The word "Brille" is German for "glasses".
+
+[Top](#)
