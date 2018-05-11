@@ -64,7 +64,7 @@ Any suggestions, questions, bugs to report or feedback to give?
 
 You can contact me by sending an email to <dev@urbanware.org>.
 
-[Top](#bille-)
+[Top](#brille-)
 
 ## Useless facts
 
