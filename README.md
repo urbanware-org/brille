@@ -5,6 +5,7 @@
 *   [Details](#details)
 *   [Requirements](#requirements)
 *   [Usage](#usage)
+*   [Contact](#contact)
 *   [Useless facts](#useless-facts)
 
 ----
@@ -13,7 +14,7 @@
 
 Simple *Python* module that allows converting a string into the Braille alphabet and vice versa.
 
-[Top](#)
+[Top](#brille-)
 
 ## Details
 
@@ -25,7 +26,7 @@ The code was written on *Linux* and has only been tested on that platform, yet.
 
 Feel free to modify!
 
-[Top](#)
+[Top](#brille-)
 
 ## Requirements
 
@@ -33,7 +34,7 @@ Notice that this module uses the *Python* 3.x framework. There is no official ve
 
 However, there is no guarantee that this works properly or at all.
 
-[Top](#)
+[Top](#brille-)
 
 ## Usage
 
@@ -55,10 +56,18 @@ string = brille.braille2string("⠞⠓⠊⠎ ⠊⠎ ⠁⠝ ⠑⠭⠁⠍⠏⠇⠑
 ```
 Notice that you can only use the UTF-8 characters to enter the Braille letters. All other characters will be ignored.
 
-[Top](#)
+[Top](#brille-)
+
+## Contact
+
+Any suggestions, questions, bugs to report or feedback to give?
+
+You can contact me by sending an email to <dev@urbanware.org>.
+
+[Top](#bille-)
 
 ## Useless facts
 
 *   The missing "a" inside the project name "Brille" is not a typo. The word "Brille" is German for "glasses".
 
-[Top](#)
+[Top](#brille-)
