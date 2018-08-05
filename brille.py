@@ -7,6 +7,7 @@
 # Distributed under the MIT License (https://opensource.org/licenses/MIT)
 #
 # GitHub: https://github.com/urbanware-org/brille
+# GitLab: https://gitlab.com/urbanware-org/brille
 # ============================================================================
 
 __version__ = "1.0.1"
