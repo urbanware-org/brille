@@ -40,11 +40,11 @@ def string2braille(string):
         string = string.replace((" " * 2), " ")
 
     for char in string.lower().strip():
-        if char == " ":
+        braille_char = BRAILLE_ALPHABET.get(char, "")
+        if braille_char == "":
             output += char
-            continue
         else:
-            output += BRAILLE_ALPHABET.get(char, "")
+            output += braille_char
 
     return output.strip()
 
@@ -56,10 +56,12 @@ def braille2string(braille_code):
     output = ""
 
     braille = {v: k for k, v in BRAILLE_ALPHABET.items()}
-    for word in braille_code.split(" "):
-        for letter in word:
-            output += braille.get(letter, "")
-        output += " "
+    for char in braille_code:
+        braille_char = braille.get(char, "")
+        if braille_char == "":
+            output += char
+        else:
+            output += braille_char
 
     return output.strip()
 
