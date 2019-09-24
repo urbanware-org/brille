@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # ============================================================================
-# Brille - Braille alphabet encode/decode module
+# Brille - Braille alphabet encode/decode module for Python
 # Copyright (C) 2019 by Ralf Kilian
 # Distributed under the MIT License (https://opensource.org/licenses/MIT)
 #

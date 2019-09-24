@@ -12,7 +12,7 @@
 
 ## Definition
 
-Simple *Python* module that allows converting a string into the Braille alphabet and vice versa.
+Simple module for *Julia* and *Python* that allows converting a string into the Braille alphabet and vice versa.
 
 [Top](#brille)
 
@@ -30,6 +30,12 @@ Feel free to modify!
 
 ## Requirements
 
+### *Julia*
+
+This module was written using *Julia* 1.1.0, but should also work with earlier and, of course, newer versions.
+
+### *Python*
+
 Notice that this module uses the *Python* 3.x framework. There is no official version for *Python* 2.x, but if you need that for whatever reason, you can try refactoring the syntax from *Python* 3.x to version 2.x using the *3to2* tool.
 
 However, there is no guarantee that this works properly or at all.
@@ -40,21 +46,35 @@ However, there is no guarantee that this works properly or at all.
 
 ### Encode a string into Braille alphabet
 
-So, to convert the string `This is an example` into the Braille alphabet, type:
+Supported characters are letters, numbers and spaces. All others will be ignored. The Braille letters will be returned using UTF-8 characters.
+
+#### *Julia*
+
+```julia
+braille = string2braille("This is an example")
+```
+
+#### *Python*
 
 ```python
 braille = brille.string2braille("This is an example")
 ```
-Supported characters are letters, numbers and spaces. All others will be ignored. The Braille letters will be returned using UTF-8 characters.
 
 ### Decode Braille alphabet into a string
 
-The other way around, to convert Braille letters into a string, type:
+Notice that you can only use the UTF-8 characters to enter the Braille letters. All other characters will be ignored.
+
+#### *Julia*
+
+```julia
+string = braille2string("⠞⠓⠊⠎ ⠊⠎ ⠁⠝ ⠑⠭⠁⠍⠏⠇⠑"))
+```
+
+#### *Python*
 
 ```python
 string = brille.braille2string("⠞⠓⠊⠎ ⠊⠎ ⠁⠝ ⠑⠭⠁⠍⠏⠇⠑"))
 ```
-Notice that you can only use the UTF-8 characters to enter the Braille letters. All other characters will be ignored.
 
 [Top](#brille)
 
