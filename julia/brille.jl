@@ -1,16 +1,16 @@
 #!/usr/bin/env julia
 # -*- coding: utf-8 -*-
 
-# ============================================================================
+#
 # Brille - Braille alphabet encode/decode module for Julia
-# Copyright (C) 2019 by Ralf Kilian
+# Copyright (C) 2023 by Ralf Kilian
 # Distributed under the MIT License (https://opensource.org/licenses/MIT)
 #
 # GitHub: https://github.com/urbanware-org/brille
 # GitLab: https://gitlab.com/urbanware-org/brille
-# ============================================================================
+#
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 BRAILLE_ALPHABET_BINARY = Dict([
                             ("a", "100000"), ("b", "101000"),
