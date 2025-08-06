@@ -19,11 +19,12 @@ Simple module for *Julia* and *Python* that allows converting a string into the 
 
 ## Details
 
-To the definition above, which actually already explains everything necessary, it should be added that the Braille characters can be printed using UTF-8 characters as well as the corresponding binary code characters.
+The definition above actually explains it all.
 
-The code was written on *Linux* and has only been tested on that platform, yet.
+It should be added that the Braille characters can be printed using UTF-8 characters as well as the corresponding binary code characters. The code was written on *Linux* and has only been tested on that platform, yet.
 
-Feel free to modify!
+> [!NOTE]
+> This project was **officially discontinued** as of August 2025 and is **no longer maintained**.
 
 [Top](#brille)
 
@@ -139,9 +140,9 @@ string = braille2string("011110 101100 011000 011010 000000 011000 011010 000000
 
 ## Contact
 
-Any suggestions, questions, bugs to report or feedback to give?
+As mentioned above, this project has been discontinued. For this reason, no new features will be implemented, existing features will not be enhanced and remaining bugs will not be fixed either.
 
-You can contact me by sending an email to [dev@urbanware.org](mailto:dev@urbanware.org) or by opening a *GitHub* issue (which I would prefer if you have a *GitHub* account).
+However, if you have questions about it, you can contact me by sending an email to <dev@urbanware.org>.
 
 [Top](#brille)
 
